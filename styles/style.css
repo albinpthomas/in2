@@ -1,0 +1,224 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.parent-container {
+  height: 100vh;
+  width: 100vw;
+  background-image: url("../images/login/right-box.jpg");
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.parent-container .main-container {
+  height: 90vh;
+  width: 90vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.parent-container .main-container .left-box {
+  background-image: url("./../images/login/alfred-kenneally-qp_q-CSC0AI-unsplash.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 2vw;
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
+.parent-container .main-container .left-box .left-box-heading {
+  font-size: 3vw;
+  font-weight: 700;
+  color: white;
+  margin: 1vw 0;
+}
+
+.parent-container .main-container .left-box .left-box-content {
+  font-size: 1vw;
+  color: white;
+  margin: 1vw 0;
+  width: 80%;
+  text-align: center;
+}
+
+.parent-container .main-container .left-box .left-box-signup {
+  background-color: lightgreen;
+  padding: 0.75vw 4vw;
+  border: none;
+  border-radius: 2vw;
+  background: none;
+  border: 2px solid white;
+  color: white;
+  margin: 2vw 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.parent-container .main-container .left-box .left-box-signup:hover {
+  background-color: #35b858;
+  color: white;
+  border: none;
+}
+
+.parent-container .main-container .right-box {
+  background-color: white;
+  height: 100%;
+  width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.parent-container .main-container .right-box .right-box-container {
+  height: 80%;
+  width: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding: 0 3vw;
+}
+
+.parent-container .main-container .right-box .right-box-container .heading {
+  color: #35b858;
+  font-size: 3vw;
+  letter-spacing: 2px;
+}
+
+.parent-container .main-container .right-box .right-box-container .input-field-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 2vw;
+  width: 80%;
+  background-color: #b8fcca;
+  padding: 0.65vw;
+  border-radius: 3px;
+}
+
+.parent-container .main-container .right-box .right-box-container .input-field-container .input-field-container-data {
+  height: 100%;
+  width: 80%;
+  border: none;
+  background: none;
+}
+
+.parent-container .main-container .right-box .right-box-container .input-field-container .input-field-container-data:focus {
+  outline: none;
+}
+
+.parent-container .main-container .right-box .right-box-container .input-field-container .input-field-container-icon {
+  padding-left: 1vw;
+}
+
+.parent-container .main-container .right-box .right-box-container .input-field-container .input-field-container-icon i {
+  font-size: 20px;
+  color: #35b858;
+}
+
+.parent-container .main-container .right-box .right-box-container .forgot-pass {
+  color: black;
+  text-decoration: none;
+}
+
+.parent-container .main-container .right-box .right-box-container .login-btn {
+  background-color: #b8fcca;
+  padding: 0.75vw 4vw;
+  border: none;
+  border-radius: 2vw;
+  cursor: pointer;
+}
+
+.parent-container .main-container .right-box .right-box-container .login-btn:hover {
+  background-color: #35b858;
+  color: white;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.phead{
+  text-align: center;
+  color: #dc3545;
+}
+
+.paybox{
+  align-items: center;
+  text-align: center;
+  border:1px solid #888888;
+  margin: 30px 550px;
+  padding: 60px 80px;
+  border-radius: 35px;
+}
+
+.pbody{
+  background-image: url("pay_bg.jpg");
+  background-size: 100%;
+}
+
+.panimation{
+  width: 400px;
+}

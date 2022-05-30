@@ -1,0 +1,145 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Jost', sans-serif;
+
+  }
+
+  .text-danger {
+    color: red !important;
+  }
+
+.main-container{
+    display: grid;
+    grid-template-columns: 45% 55%;
+    height: 100vh;
+}
+.logo-container{
+  background-color: #14141C;
+
+}
+.logo-container .logo{
+    width: 100%;
+    height: 100%;
+
+}
+.login-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    background-color: #FFFF;
+}
+.login-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 80%;
+    height: 100%;
+}
+.login-form h3{
+    margin-bottom: 10%;
+    font-size: xx-large;
+}
+.login-form h1{
+    font-size: 80px;
+}
+.login-form input::placeholder{
+    color: rgba(0, 0, 0,0.8);
+    font-size: large;
+}
+.login-form input:focus{
+    outline: none;
+}
+.input-field {
+    position: relative;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+  }
+.input-field  input[type="email"],input[type="text"],input[type="password"] {
+    width: 90%;
+    background-color: #FFFF;
+  }
+
+.effect {
+    border: 0;
+    padding: 7px 0;
+    border-bottom: 1px solid rgba(0, 0, 0,0.8);
+  }
+.effect ~ .focus-border {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 3px;
+    margin-left: 30px;
+    background-color: black;
+    transition: 0.4s;
+  }
+.effect:focus ~ .focus-border {
+    width: 90%;
+    transition: 0.4s;
+    left: 0;
+  }
+.btn {
+    width: 100%;
+    margin: 20px;
+    height: 50px;
+    border-radius: 50px;
+    border: none;
+    color: rgb(245, 245, 245);
+    background-color: black;
+    font-size: large;
+    transition: 0.4s ease-in-out;
+    cursor: pointer;
+  }
+  .btn:hover {
+    color: #000;
+    font-weight: 900;
+    background-color: rgb(5, 214, 50);
+  }
+  .login-form a{
+      cursor: pointer;
+  }
+ .login-container .toggle-switch{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transform: translateY(20px);
+      background-color:black;
+      height: 40px;
+      width: 40px;
+      border-radius: 50%;
+      color: whitesmoke;
+  }
+  .toggle-switch .fas{
+      font-size: 20px;
+  }
+
+#errorfname {
+  color: red;
+}
+ 
+#errorlname {
+  color: red;
+}
+#erroremail {
+  color: red;
+}
+#errorpassword {
+  color: red;
+}
+#errorcpassword {
+  color: red;
+}
+
+.newlabel {
+  text-align: left;
+  justify-content: left;
+  margin: 0% 5%;
+  visibility: hidden;
+}

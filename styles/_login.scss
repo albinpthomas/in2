@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+
+}
+.parent-container {
+  height: 100vh;
+  width: 100vw;
+  background-image: url("../images/login/right-box.jpg");
+  background-size: cover;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  .main-container {
+    height: 90vh;
+    width: 90vw;
+    display: flex;
+
+    .left-box {
+      background-image: url("./../images/login/alfred-kenneally-qp_q-CSC0AI-unsplash.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: 100%;
+      width: 40%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 0 2vw;
+      border-bottom-left-radius: 5px;
+      border-top-left-radius: 5px;
+      .left-box-heading{
+        font-size: 3vw;
+        font-weight:700;
+        color: white;
+        margin: 1vw 0;
+        
+      }
+      .left-box-content{
+        font-size: 1vw;
+        color: white;
+        margin: 1vw 0;
+        width: 80%;
+        text-align: center;
+      }
+    
+      .left-box-signup{
+        background-color: lightgreen;
+        padding: 0.75vw 4vw;
+        border: none;
+        border-radius: 2vw;
+        background:none;
+        border:2px solid white;
+        color: white;
+        margin: 2vw 0;
+        transition: 0.3s;
+        cursor: pointer;
+        text-decoration: none;
+        &:hover{
+          background-color: #35b858;
+          color: white;
+          border: none;
+        }
+    }
+      
+    }
+    .right-box {
+      background-color: white;
+      height: 100%;
+      width: 60%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      border-bottom-right-radius: 5px;
+      border-top-right-radius: 5px;
+
+      .right-box-container {
+        height: 80%;
+        width: 70%;
+       
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        padding: 0 3vw;
+        .heading{
+            color: #35b858;
+            font-size: 3vw;
+            letter-spacing: 2px;
+        }
+        
+
+        .input-field-container {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
+          height: 2vw;
+          width: 80%;
+          background-color: #b8fcca;
+          padding: 0.65vw;
+          border-radius: 3px;
+
+          .input-field-container-data {
+            height: 100%;
+            width: 80%;
+            border: none;
+            background: none;
+            &:focus{
+                outline: none;
+            }
+           
+          }
+        
+          .input-field-container-icon{
+              padding-left: 1vw;
+              i{
+                  font-size: 20px;
+                  color: #35b858;
+              }
+             
+            }
+        }
+
+        .forgot-pass{
+          color: black;
+          text-decoration: none;
+        }
+        .login-btn{
+          background-color: #b8fcca;
+          padding: 0.75vw 4vw;
+          border: none;
+          border-radius: 2vw;
+          cursor: pointer;
+          &:hover{
+            background-color: #35b858;
+            color: white;
+            transition: 0.3s;
+          }
+      }
+      }
+    }
+  }
+}
